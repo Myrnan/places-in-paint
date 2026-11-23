@@ -28,8 +28,8 @@ content:
           - {name: city, label: City, type: string}
           - {name: neighborhood, label: Neighborhood, type: string}
           - {name: place, label: Venue or landmark, type: string}
-          - {name: latitude, label: Latitude, type: number, options: {min: -85.05112878, max: 85.05112878}}
-          - {name: longitude, label: Longitude, type: number, options: {min: -180, max: 180}}
+          - {name: latitude, label: Latitude, type: string}
+          - {name: longitude, label: Longitude, type: string}
           - {name: notes, label: Location note, type: text}
           - {name: originalImage, type: string, hidden: true}
           - {name: thumbnail, type: string, hidden: true}
