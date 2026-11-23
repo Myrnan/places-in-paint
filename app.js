@@ -385,8 +385,11 @@ async function initMap() {
 async function start() {
   try {
     const catalog = await json('artworks.json');
-    artworks = catalog.paintings;
-    if (!Array.isArray(artworks)) throw new Error('Invalid artwork catalog');
+artworks = catalog.paintings.map((painting) => ({
+  ...painting,
+  latitude: String(painting.latitude ?? '').trim() === '' ? null : Number(painting.latitude),
+  longitude: String(painting.longitude ?? '').trim() === '' ? null : Number(painting.longitude),
+}));    if (!Array.isArray(artworks)) throw new Error('Invalid artwork catalog');
     groups = makeGroups(artworks);
   } catch {
     loadError = true;
