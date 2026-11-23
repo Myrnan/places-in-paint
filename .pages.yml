@@ -1,0 +1,36 @@
+media:
+  input: images
+  output: /images
+  categories: [image]
+content:
+  - name: portfolio
+    label: Portfolio
+    path: artworks.json
+    type: file
+    format: json
+    fields:
+      - name: paintings
+        label: Paintings
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title} {displayLabel} — {place}"
+        fields:
+          - {name: id, label: 'Link ID (keep existing IDs)', type: string, required: true, pattern: '^[a-z0-9]+(-[a-z0-9]+)*$'}
+          - {name: title, label: Painting title, type: string}
+          - {name: displayLabel, label: Temporary label, type: string}
+          - {name: image, label: Painting photo, type: image, required: true}
+          - {name: imageAlt, label: Describe the image, type: string}
+          - {name: description, label: The story behind the painting, type: text}
+          - {name: datePainted, label: Date or year painted, type: string}
+          - {name: country, label: Country, type: string}
+          - {name: city, label: City, type: string}
+          - {name: neighborhood, label: Neighborhood, type: string}
+          - {name: place, label: Venue or landmark, type: string}
+          - {name: latitude, label: Latitude, type: number, options: {min: -85.05112878, max: 85.05112878}}
+          - {name: longitude, label: Longitude, type: number, options: {min: -180, max: 180}}
+          - {name: notes, label: Location note, type: text}
+          - {name: originalImage, type: string, hidden: true}
+          - {name: thumbnail, type: string, hidden: true}
+          - {name: imageSrcset, type: string, hidden: true}
