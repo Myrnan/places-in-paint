@@ -1,0 +1,61 @@
+{
+  "paintings": [
+    {
+      "id": "riyadh-01",
+      "title": null,
+      "displayLabel": "Artwork 1",
+      "image": "/images/riyadh-01-2400.webp",
+      "imageAlt": "Two figures walk beside loaded camels against an ochre background.",
+      "thumbnail": "images/riyadh-01-160.webp",
+      "imageSrcset": "images/riyadh-01-960.webp 960w, images/riyadh-01-2400.webp 2400w",
+      "description": null,
+      "datePainted": null,
+      "country": "Saudi Arabia",
+      "city": null,
+      "neighborhood": null,
+      "latitude": 22.65,
+      "longitude": 54.65,
+      "notes": "Approximate location in the Saudi Empty Quarter near the UAE and Oman.",
+      "place": "Empty Quarter (Rubʿ al Khali)",
+      "originalImage": "/images/riyadh-01-2400.webp"
+    },
+    {
+      "id": "riyadh-02",
+      "title": null,
+      "displayLabel": "Artwork 2",
+      "image": "/images/riyadh-02-2400.webp",
+      "imageAlt": "A figure carries a child through an ochre passage lit by hanging lamps.",
+      "thumbnail": "images/riyadh-02-160.webp",
+      "imageSrcset": "images/riyadh-02-960.webp 960w, images/riyadh-02-2400.webp 2400w",
+      "description": null,
+      "datePainted": null,
+      "country": "Saudi Arabia",
+      "city": "Riyadh",
+      "neighborhood": "Al Dahu",
+      "latitude": 24.62924,
+      "longitude": 46.71362,
+      "notes": "Pin marks the Al Dahu market area.",
+      "place": "Aldahu Market",
+      "originalImage": "/images/riyadh-02-2400.webp"
+    },
+    {
+      "id": "riyadh-03",
+      "title": null,
+      "displayLabel": "Artwork 3",
+      "image": "/images/riyadh-03-2400.webp",
+      "imageAlt": "A gathering around a coffee counter, painted in shades of blue.",
+      "thumbnail": "images/riyadh-03-160.webp",
+      "imageSrcset": "images/riyadh-03-960.webp 960w, images/riyadh-03-2400.webp 2400w",
+      "description": null,
+      "datePainted": null,
+      "country": "Saudi Arabia",
+      "city": "Riyadh",
+      "neighborhood": "Al Olaya",
+      "latitude": 24.691951,
+      "longitude": 46.684466,
+      "notes": null,
+      "place": "Good Neighbor Café",
+      "originalImage": "/images/riyadh-03-2400.webp"
+    }
+  ]
+}

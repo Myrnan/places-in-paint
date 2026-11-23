@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A painting portfolio explored through the places that inspired it.">
+  <meta name="theme-color" content="#f8f5ec">
+  <title>Myrnan - Places in Paint</title>
+  <link rel="stylesheet" href="assets/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="assets/leaflet.min.js"></script>
+  <script defer src="assets/topojson.js"></script>
+  <script defer src="assets/cluster.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="./" aria-label="Myrnan - Places in Paint home"><span class="compass" aria-hidden="true">✧</span> Myrnan - Places in Paint</a>
+    <span class="masthead-note">Painting portfolio</span>
+  </header>
+  <main>
+    <section id="atlas" aria-labelledby="atlas-title">
+      <div class="intro">
+        <div><p class="eyebrow">The atlas</p><h1 id="atlas-title">Myrnan - Places in <em>Paint</em></h1></div>
+        <p class="intro-note">A visual travel journal. Follow the map to the places that inspired the paintings.</p>
+      </div>
+      <div class="atlas-layout">
+        <section class="map-wrap" aria-label="Explore the map">
+          <div id="map" aria-label="Interactive world map"></div>
+          <div class="map-actions"><button id="world" type="button">World view</button></div>
+          <p id="map-status" class="map-status" role="status" hidden></p>
+        </section>
+        <aside class="places" aria-labelledby="places-title">
+          <p class="eyebrow" id="places-context">Explore the atlas</p>
+          <h2 id="places-title" tabindex="-1">Places</h2>
+          <div id="places-list" class="places-list"></div>
+          <p id="sample-note" class="sample-note" hidden><span aria-hidden="true">◇</span> Sample map locations and artwork records. Portfolio details are pending confirmation.</p>
+        </aside>
+      </div>
+    </section>
+    <article id="painting" hidden aria-labelledby="painting-title"></article>
+  </main>
+  <footer><span>Myrnan - Places in Paint</span><span>A painting portfolio</span></footer>
+</body>
+</html>
